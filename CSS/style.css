@@ -1,0 +1,56 @@
+body
+{
+    margin: 0;
+    background-color: #EA8FEA;
+}
+.navBar
+{
+    background-color: #B9F3E4;
+    height:100px;
+    text-align: center;
+}
+#output
+{
+    padding-top: 40px;
+}
+.game
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.computer
+{
+    margin: 30px;
+    padding: 50px;
+    background-color: #F6E6C2;
+    border-radius: 20px;
+}
+.user
+{
+    margin: 30px;
+    padding:50px;
+    border-radius: 20px;
+    background-color: #F6E6C2;
+}
+#submitButton
+{
+    background-color:blue;
+    margin-top: 10px;
+    color:white;
+    padding: 5px;
+    border-radius: 5px;
+}
+#submitButton:active
+{
+    background-color:black;
+    margin-top: 10px;
+    color:white;
+    padding: 5px;
+    border-radius: 5px;
+}
+#displayComputerPoints, #displayUserPoints
+{
+    color: red;
+    font-style: italic;
+}

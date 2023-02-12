@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Stone-Paper-Game</title>
+</head>
+<body>
+    <nav>
+        <div class="navBar">
+            <h1 id="output" text-align="center">Welcome to the ultimate game</h1>
+        </div>
+        <div class= "game">
+            <div class="computer">
+                <h2 id="displayComputerPoints">Points:0</h2>
+                <h2 style="text-align:center">Computer</h2>
+                <img src="Images/Scissors.jpg" alt="" width="250px" id="computerImage">
+                <h3 id="computerChoice">Scissors</h3>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="user">
+                <h2 id="displayUserPoints">Points:0</h2>
+                <h2 style="text-align:center
+                ">User</h2>
+                <img src="Images/Scissors.jpg" alt="" width="250px" id="userImage">
+                <h3 id="userChoice">Scissors</h3>
+                <label class="option" for="cardtype">Choose your option:</label>
+                <select id="cardtype" name="cards">
+                    <option value="selectcard">--- Please select ---</option>
+                    <option value="Stone">Stone</option>
+                    <option value="Paper">Paper</option>
+                    <option value="Scissors">Scissors</option>
+                </select><br/>
+                <button onclick="check()" id="submitButton">Submit</button>
+            </div>
+        </div>
+    </nav>
+    <!-- <hello></hello> -->
+    <script src="index.js"></script>
+</body>
+</html>
