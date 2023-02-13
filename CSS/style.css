@@ -1,11 +1,17 @@
 body
 {
     margin: 0;
-    background-color: #EA8FEA;
+    /* background-color: #EA8FEA; */
+    background: url('Images/WindowImg.jpg') no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 .navBar
 {
-    background-color: #B9F3E4;
+    background-color: transparent;
     height:100px;
     text-align: center;
 }
@@ -16,19 +22,31 @@ body
 .game
 {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
+}
+@media (min-width:1000px) {
+    .game
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 .computer
 {
+    flex-basis: 20%;
     margin: 30px;
     padding: 50px;
     background-color: #F6E6C2;
     border-radius: 20px;
+    order:1;
 }
 .user
 {
+    order: 2;
     margin: 30px;
+    flex-basis: 20%;
     padding:50px;
     border-radius: 20px;
     background-color: #F6E6C2;
@@ -53,4 +71,9 @@ body
 {
     color: red;
     font-style: italic;
+}
+#computerImage, #userImage
+{
+    border-radius: 10px;
+    margin: auto;
 }
